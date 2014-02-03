@@ -1,0 +1,35 @@
+{
+  "name": "lounge",
+  "version": "0.0.1",
+  "description": "Sit back, relax, and let Lounge perform your CouchDB migrations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt mochacov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warrensplayer/lounge.git"
+  },
+  "keywords": [
+    "CouchDB"
+  ],
+  "author": "Stokes Player",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/warrensplayer/lounge/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "mocha": "~1.17.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-cov": "~0.2.0",
+    "expect.js": "~0.2.0"
+  },
+  "dependencies": {
+    "underscore": "~1.5.2",
+    "nano": "~4.4.0",
+    "async": "~0.2.10",
+    "cli-table": "~0.2.0"
+  }
+}
