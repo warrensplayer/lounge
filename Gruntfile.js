@@ -25,10 +25,15 @@ module.exports = function(grunt) {
             options: {
                 files: ['test/*Spec.js']
             },
-            coverage: {
+            coveralls: {
               options: {
                 coveralls: true
               }
+            },
+            coverage: {
+                options: {
+                    reporter: 'html-cov'
+                }
             },
             test: {
                 options: {

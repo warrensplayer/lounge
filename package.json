@@ -4,12 +4,12 @@
   "description": "Sit back, relax, and let Lounge perform your CouchDB migrations.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt mochacov:coverage"
+    "test": "grunt mochacov:coveralls"
   },
   "config": {
     "blanket": {
       "pattern": [
-        "lib/**/*.js"
+        "lib"
       ]
     }
   },
