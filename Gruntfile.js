@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         watch: {
             lounge: {
                 files: files,
-                tasks: ['jshint', 'mochacov']
+                tasks: ['jshint', 'mochacov:test']
             },
             test: {
                 files: testFiles,
-                tasks: ['mochacov']
+                tasks: ['mochacov:test']
             }
         },
         jshint: {
@@ -23,9 +23,18 @@ module.exports = function(grunt) {
         },
         mochacov: {
             options: {
-                reporter: 'spec'
+                files: ['test/*Spec.js']
             },
-            all: ['test/*Spec.js']
+            coverage: {
+              options: {
+                coveralls: true
+              }
+            },
+            test: {
+                options: {
+                    reporter: 'spec'
+                }
+            }
         }
     });
 
@@ -35,6 +44,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['jshint']);
 
-    grunt.registerTask('test', ['mochacov']);
+    grunt.registerTask('test', ['mochacov:test']);
 
 };

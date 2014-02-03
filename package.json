@@ -4,7 +4,14 @@
   "description": "Sit back, relax, and let Lounge perform your CouchDB migrations.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt mochacov"
+    "test": "grunt mochacov:coverage"
+  },
+  "config": {
+    "blanket": {
+      "pattern": [
+        "lib/**/*.js"
+      ]
+    }
   },
   "repository": {
     "type": "git",
