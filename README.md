@@ -1,5 +1,5 @@
 # Lounge
-[![Build Status](https://travis-ci.org/warrensplayer/lounge.png?branch=master)](https://travis-ci.org/warrensplayer/lounge)
+[![Build Status](https://travis-ci.org/warrensplayer/lounge.png?branch=master)](https://travis-ci.org/warrensplayer/lounge) [![Coverage Status](https://coveralls.io/repos/warrensplayer/lounge/badge.png?branch=master)](https://coveralls.io/r/warrensplayer/lounge?branch=master)
 
 ## Installation
 
